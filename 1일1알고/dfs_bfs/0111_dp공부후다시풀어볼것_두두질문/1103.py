@@ -72,6 +72,7 @@ dy = [1, 0, -1, 0]
 
 ########### 정말 다양한 방식으로 나타낼수 있음
 def dfs(x, y, cnt):
+    print(visited)
     global ans, flag
 
     if ans < cnt:
@@ -98,4 +99,5 @@ else:
     for i in range(N):
         mmax = max(mmax, max(dp[i]))
     print(mmax)
+print(visited)
 ############
