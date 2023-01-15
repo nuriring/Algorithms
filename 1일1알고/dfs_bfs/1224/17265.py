@@ -81,20 +81,6 @@ def dfs(x,y,N,res,op):
 
         if res<mmin:
             mmin =res
-        # else:
-        #     if mmax<0:
-        #         if abs(mmax)>=abs(res):
-        #             mmax = res
-        #     else:
-        #         if mmax <= res:
-        #             mmax = res
-        #     if mmin<0:
-        #         if abs(mmin)<abs(res):
-        #             mmin = res
-        #     else:
-        #         if res<mmin:
-        #             mmin = res
-
 
     else:
 
