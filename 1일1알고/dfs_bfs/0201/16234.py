@@ -35,7 +35,7 @@ def bfs(x,y):
 day = 0
 while True:
     visited = [[0]*N for _ in range(N)]
-    flag = False
+    flag = False#인구이동을 계속할지 flag
     for i in range(N):
         for j in range(N):
             if visited[i][j]==0:
