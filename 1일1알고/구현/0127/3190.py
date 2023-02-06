@@ -4,6 +4,11 @@ input = sys.stdin.readline
 from collections import defaultdict
 from collections import deque
 
+from collections import Counter
+test = [1,2,3,2]
+counter = Counter(test)
+print(counter) #Counter({2: 2, 1: 1, 3: 1})
+print(counter[2]) #2
 
 
 def turn_right(now_d):
@@ -31,7 +36,7 @@ L = int(input()) #방향 회전 정보 갯수
 for _ in range(L):
     sec, d = input().split()
     spin_info[int(sec)] = d #spin정보를 딕트에 담음
-
+print(spin_info)
 dx = [0,1,0,-1] #우하좌상
 dy = [1,0,-1,0]
 # print(arr)
