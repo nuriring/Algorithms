@@ -1,15 +1,18 @@
-#123454321
-#135797531
-# (2*n-1 - (1~2*n-1까지 2씩 늘어남))//2 +  1~2*n-1까지 2씩 늘어남 (2*n-1 - (1~2*n-1까지 2씩 늘어남))//2
-# 4 1 4
-# 3 3 3
-# 2 5 2
-n = int(input())
-for i in range(1,2*n,2):
-    space = (2*n-1 - i)//2
-    print(' '*space + '*'*i)
-for i in range(2*n-3,0,-2):
-    space = (2 * n - 1 - i) // 2
-    print(' '*space + '*'*i)
+while True:
+    N = int(input())
+    if N == -1 :
+        break
+    cnt = 0
+    nums = []
+    for i in range(1,N):
+        if N%i==0:
+            nums.append(str(i))
+            nums.append('+')
+            cnt+=i
+    if cnt==N:
 
-
+        res = nums[0:len(nums)-1]
+        ans = ' '.join(res)
+        print(f'{N} = {ans}')
+    else:
+        print(f'{N} is NOT perfect.')
