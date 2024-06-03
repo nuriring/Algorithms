@@ -143,3 +143,6 @@ def solution(key,lock):
 
 
     return answer
+
+
+    
